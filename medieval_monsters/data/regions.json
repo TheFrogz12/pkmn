@@ -4,12 +4,12 @@
     "biome": {
       "name": "Ancient Forest",
       "climate": "temperate",
-      "resources": ["herbs", "timber", "mushrooms"],
+
       "encounter_rate": 0.2
     },
     "danger_level": 2,
     "description": "Towering oaks shelter a network of mossy ruins.",
-    "neighbors": {"east": "Bogmire Fen", "north": "Stormwatch Keep"},
+
     "points_of_interest": ["Moonwell", "Forgotten Shrine"]
   },
   {
@@ -24,18 +24,6 @@
     "description": "Thick fog rolls across stagnant waters hiding dangers.",
     "neighbors": {"west": "Elder Glade"},
     "points_of_interest": ["Sunken Obelisk"]
-  },
-  {
-    "name": "Stormwatch Keep",
-    "biome": {
-      "name": "Crumbling Battlements",
-      "climate": "wind-swept",
-      "resources": ["stone", "wild grain"],
-      "encounter_rate": 0.15
-    },
-    "danger_level": 1,
-    "description": "The remains of an old keep overlooking the valleys below.",
-    "neighbors": {"south": "Elder Glade"},
-    "points_of_interest": ["Signal Tower", "Abandoned Barracks"]
+
   }
 ]

@@ -12,11 +12,7 @@
       {"name": "Gust", "element": "wind", "power": 12, "stamina_cost": 4},
       {"name": "Soothing Light", "element": "holy", "power": 0, "stamina_cost": 3}
     ],
-    "lore": "A playful spirit that guides lost travelers."
-  },
-  {
-    "name": "Bog Lurker",
-    "element": "nature",
+
     "level": 5,
     "max_hp": 32,
     "attack": 9,
@@ -24,23 +20,6 @@
     "agility": 5,
     "capture_rate": 0.25,
     "skills": [
-      {"name": "Toxic Spit", "element": "nature", "power": 15, "stamina_cost": 6}
-    ],
-    "lore": "Dwells in murky swamps waiting for careless wanderers."
-  },
-  {
-    "name": "Cinder Wolf",
-    "element": "fire",
-    "level": 4,
-    "max_hp": 28,
-    "attack": 10,
-    "defense": 5,
-    "agility": 7,
-    "capture_rate": 0.22,
-    "skills": [
-      {"name": "Flame Bite", "element": "fire", "power": 18, "stamina_cost": 6},
-      {"name": "Ember Howl", "element": "fire", "power": 10, "stamina_cost": 4}
-    ],
-    "lore": "A fiery guardian that prowls the edges of ruined keeps."
+
   }
 ]
