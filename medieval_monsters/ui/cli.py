@@ -2,13 +2,6 @@
 from __future__ import annotations
 
 
-from medieval_monsters.data import load_monsters, load_recipes, load_regions
-from medieval_monsters.player.player import Player
-from medieval_monsters.systems import exploration, survival
-
-
-def _print_help() -> None:
-
     regions = load_regions()
     monsters = load_monsters()
     recipes = load_recipes()

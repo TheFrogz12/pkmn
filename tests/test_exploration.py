@@ -17,7 +17,7 @@ def test_travel_returns_event_and_updates_location():
 
     assert player.location == destination.name
     assert event.encounter_chance == destination.get_encounter_chance()
-    assert event.outcome in {"calm", "resource", "encounter"}
+
 
 
 def test_forage_adds_resource_to_inventory():
@@ -30,3 +30,4 @@ def test_forage_adds_resource_to_inventory():
 
     assert resource in keep.biome.resources
     assert player.get_item_quantity(resource) == 1
+

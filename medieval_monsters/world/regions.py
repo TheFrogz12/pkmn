@@ -8,18 +8,11 @@ from dataclasses import dataclass, field
 @dataclass
 class Biome:
 
+
     name: str
     climate: str
     resources: List[str]
     encounter_rate: float
-
-
-    name: str
-    biome: Biome
-    danger_level: int
-    description: str
-    neighbors: Dict[str, "Region"] = field(default_factory=dict)
-    points_of_interest: List[str] = field(default_factory=list)
 
 
 

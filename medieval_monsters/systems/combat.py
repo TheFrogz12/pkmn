@@ -1,6 +1,3 @@
-"""Simplified combat scaffolding."""
-from __future__ import annotations
-
 
 
 

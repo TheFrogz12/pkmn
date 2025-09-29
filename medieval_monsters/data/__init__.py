@@ -22,6 +22,7 @@ def load_monsters() -> List[Monster]:
 def load_regions() -> Dict[str, Region]:
     payload = _load_json_resource(__name__, "regions.json")
 
+
     for entry in payload:
         region = regions[entry["name"]]
         for direction, neighbor_name in entry.get("neighbors", {}).items():

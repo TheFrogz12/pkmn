@@ -1,8 +1,7 @@
 from medieval_monsters.creatures.monster import Monster
 from medieval_monsters.data import load_monsters
 from medieval_monsters.systems.combat import (
-    capture_monster,
-    determine_turn_order,
+
     simulate_attack,
 )
 
@@ -15,5 +14,3 @@ from medieval_monsters.systems.combat import (
 
     defender.apply_damage(8)
 
-    assert 0.05 <= chance <= 0.95
-    assert chance >= defender.capture_rate

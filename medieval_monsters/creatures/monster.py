@@ -14,6 +14,7 @@ class Skill:
 
 
 
+
 @dataclass
 class Monster:
     name: str
@@ -48,6 +49,7 @@ class Monster:
         return round(chance, 3)
 
 
+
     @classmethod
     def from_dict(cls, data: Dict) -> "Monster":
         skills = [Skill(**skill) for skill in data.get("skills", [])]
@@ -63,4 +65,5 @@ class Monster:
             skills=skills,
             lore=data.get("lore", ""),
         )
+
 
