@@ -6,7 +6,7 @@ from importlib import resources
 from typing import Dict, Iterable, List
 
 from medieval_monsters.creatures.monster import Monster
-from medieval_monsters.world.regions import Region
+
 
 
 def _load_json_resource(package: str, name: str) -> Iterable[Dict]:
@@ -21,7 +21,7 @@ def load_monsters() -> List[Monster]:
 
 def load_regions() -> Dict[str, Region]:
     payload = _load_json_resource(__name__, "regions.json")
-    regions: Dict[str, Region] = {entry["name"]: Region.from_dict(entry) for entry in payload}
+
 
     for entry in payload:
         region = regions[entry["name"]]
@@ -35,7 +35,4 @@ def load_regions() -> Dict[str, Region]:
 
 def load_recipes() -> Dict[str, Dict[str, int]]:
     payload = _load_json_resource(__name__, "recipes.json")
-    return {entry["name"]: {k: int(v) for k, v in entry["ingredients"].items()} for entry in payload}
 
-
-__all__ = ["load_monsters", "load_regions", "load_recipes"]
