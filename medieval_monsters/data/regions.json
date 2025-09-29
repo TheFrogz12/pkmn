@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Elder Glade",
+    "biome": {
+      "name": "Ancient Forest",
+      "climate": "temperate",
+      "resources": ["herbs", "timber"],
+      "encounter_rate": 0.2
+    },
+    "danger_level": 2,
+    "description": "Towering oaks shelter a network of mossy ruins.",
+    "neighbors": {"east": "Bogmire Fen"},
+    "points_of_interest": ["Moonwell", "Forgotten Shrine"]
+  },
+  {
+    "name": "Bogmire Fen",
+    "biome": {
+      "name": "Misty Marsh",
+      "climate": "humid",
+      "resources": ["reeds", "bog iron"],
+      "encounter_rate": 0.3
+    },
+    "danger_level": 3,
+    "description": "Thick fog rolls across stagnant waters hiding dangers.",
+    "neighbors": {"west": "Elder Glade"},
+    "points_of_interest": ["Sunken Obelisk"]
+  }
+]
