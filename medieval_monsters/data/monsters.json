@@ -12,11 +12,7 @@
       {"name": "Gust", "element": "wind", "power": 12, "stamina_cost": 4},
       {"name": "Soothing Light", "element": "holy", "power": 0, "stamina_cost": 3}
     ],
-    "lore": "A playful spirit that guides lost travelers." 
-  },
-  {
-    "name": "Bog Lurker",
-    "element": "poison",
+
     "level": 5,
     "max_hp": 32,
     "attack": 9,
@@ -24,8 +20,6 @@
     "agility": 5,
     "capture_rate": 0.25,
     "skills": [
-      {"name": "Toxic Spit", "element": "poison", "power": 15, "stamina_cost": 6}
-    ],
-    "lore": "Dwells in murky swamps waiting for careless wanderers." 
+
   }
 ]

@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import Dict, List
+
 
 
 @dataclass
@@ -11,6 +11,7 @@ class Skill:
     element: str
     power: int
     stamina_cost: int = 5
+
 
 
 @dataclass
@@ -28,7 +29,6 @@ class Monster:
 
     current_hp: int = field(init=False)
 
-    def __post_init__(self) -> None:
         self.current_hp = self.max_hp
 
     @property
@@ -47,6 +47,7 @@ class Monster:
         chance = min(0.95, max(0.05, self.capture_rate + health_factor * 0.5 + bonus))
         return round(chance, 3)
 
+
     @classmethod
     def from_dict(cls, data: Dict) -> "Monster":
         skills = [Skill(**skill) for skill in data.get("skills", [])]
@@ -62,3 +63,4 @@ class Monster:
             skills=skills,
             lore=data.get("lore", ""),
         )
+
